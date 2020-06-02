@@ -9,9 +9,8 @@ declare namespace API {
       key: string;
       label: string;
     }[];
-    userid?: string;
+    userId?: string;
     access?: 'user' | 'guest' | 'admin';
-    unreadCount?: number;
   }
 
   export interface LoginStateType {
