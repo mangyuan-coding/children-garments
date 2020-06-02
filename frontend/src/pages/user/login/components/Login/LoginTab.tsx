@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+// @ts-ignore
 import { TabPaneProps } from 'antd/es/tabs';
 import { Tabs } from 'antd';
 import LoginContext, { LoginContextProps } from './LoginContext';
@@ -26,7 +27,6 @@ const LoginTab: React.FC<LoginTabProps> = (props) => {
       tabUtil.addTab(uniqueId);
     }
   }, []);
-
   const { children } = props;
   return <TabPane {...props}>{props.active && children}</TabPane>;
 };
