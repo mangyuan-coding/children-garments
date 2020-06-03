@@ -1,8 +1,9 @@
 // https://umijs.org/config/
-import { defineConfig } from 'umi';
+import {defineConfig} from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
-const { REACT_APP_ENV } = process.env;
+
+const {REACT_APP_ENV} = process.env;
 export default defineConfig({
   hash: true,
   antd: {},
@@ -41,10 +42,29 @@ export default defineConfig({
       ],
     },
     {
-      name: '产品',
+      name: '管理',
       icon: 'smile',
-      path: '/product',
-      component: './product',
+      path: '/manage',
+      routes: [
+        {
+          name: '产品',
+          icon: 'smile',
+          path: 'manage/product',
+          component: './manage/product',
+        },
+        {
+          name: '供应商',
+          icon: 'smile',
+          path: '/manage/supplier',
+          component: './manage/supplier',
+        },
+        {
+          name: '客户',
+          icon: 'smile',
+          path: '/manage/customer',
+          component: './manage/customer',
+        },
+      ],
     },
     {
       component: './404',

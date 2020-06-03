@@ -1,7 +1,6 @@
 import React, {FC, useEffect} from 'react';
 import moment from 'moment';
 import {Button, Form, Input, Modal, Result} from 'antd';
-import Upload from "antd/es/upload";
 import {BasicListItemDataType} from '../data.d';
 import styles from '../style.less';
 
@@ -72,12 +71,6 @@ const OperationModal: FC<OperationModalProps> = (props) => {
     }
     return (
       <Form {...formLayout} form={form} onFinish={handleFinish}>
-        <Form.Item
-          name="image"
-          label="图片"
-        >
-          <Upload/>
-        </Form.Item>
         <Form.Item
           name="code"
           label="编号"
