@@ -42,6 +42,12 @@ export default defineConfig({
       ],
     },
     {
+      name: '分析',
+      icon: 'smile',
+      path: '/',
+      component: './dashboard',
+    },
+    {
       name: '管理',
       icon: 'smile',
       path: '/manage',
@@ -65,6 +71,12 @@ export default defineConfig({
           component: './manage/customer',
         },
       ],
+    },
+    {
+      name: '库存',
+      icon: 'smile',
+      path: 'inventory',
+      component: './inventory',
     },
     {
       component: './404',

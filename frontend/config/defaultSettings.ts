@@ -1,4 +1,4 @@
-import { Settings as LayoutSettings } from '@ant-design/pro-layout';
+import {Settings as LayoutSettings} from '@ant-design/pro-layout';
 
 export default {
   navTheme: 'light',
@@ -13,7 +13,7 @@ export default {
   menu: {
     locale: true,
   },
-  title: 'Ant Design Pro',
+  title: '童装',
   pwa: false,
   iconfontUrl: '',
 } as LayoutSettings & {
