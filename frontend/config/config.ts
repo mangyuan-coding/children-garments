@@ -42,6 +42,18 @@ export default defineConfig({
       ],
     },
     {
+      name: '销售',
+      icon: 'smile',
+      path: '/sales',
+      component: './sales',
+    },
+    {
+      name: '采购',
+      icon: 'smile',
+      path: '/purchase',
+      component: './purchase',
+    },
+    {
       name: '分析',
       icon: 'smile',
       path: '/',
